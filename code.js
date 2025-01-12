@@ -1,13 +1,24 @@
 function fillGoogleForm() {
-    const formUrl = "https://docs.google.com/forms/d/1TyTcCMeNZuBcYkMRTP4acZ76HO_G0y74Zx3-BitTUew/edit"; // Replace with your form's Edit URL
+    const formUrl = "https://docs.google.com/forms/d/1TyTcCMeNZuBcYkMRTP4acZ76HO_G0y74Zx3-BitTUew/edit"; // Replace with your form's Edit URL. Do not copy the responder link
     const form = FormApp.openByUrl(formUrl);
   
     const responses = {
       "this is": {
-        values: [1, 2, 3, 4, 5],
+        values: [1, 2, 3, 4, 5], // linear scale question
         weights: [0.20, 0.30, 0.10, 0.25, 0.15], // Weighted percentages for each option
       },
-      // Add more questions here...
+      "Which one is the JavaScript extension?": { // Multiple choice question
+      values: ['.js', '.ejs', '.mjs', 'All'],
+      weights: [0.50, 0.10, 0.20, 0.20],
+    },
+    "Which one is the JavaScript extension?":{ // checkbox question
+        values: [[".js"],[".js",".ejs"],[".js",".ejs",".mjs"]],
+        weights: [0.50, 0.10, 0.20, 0.20],
+    },
+    "What is your favorite color?": { // Short answer question
+      values: ['Red', 'Blue', 'Green', 'Yellow', 'Purple'],
+      weights: [0.30, 0.25, 0.15, 0.20, 0.10], 
+    }
     };
   
     for (let i = 0; i < 5; i++) { // Generate 100 responses
