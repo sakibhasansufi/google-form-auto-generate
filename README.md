@@ -23,6 +23,7 @@
 
 **4. Copy and paste the code the code from code.js**
 ##
+
 ![alt text](image-3.png)
 
 
@@ -32,6 +33,7 @@
 const formUrl = "https://docs.google.com/forms/d/1TyTcCMeNZuBcYkMRTP4acZ76HO_G0y74Zx3-BitTUew/edit"
 ```
 ![alt text](image-5.png)
+
 
 
 **6. Change the question and option for for your google form**
@@ -68,6 +70,7 @@ for (let i = 0; i < 5; i++) { // Generate 5 responses }
 
 
 **9. Save and finally run the code**
+##
 ![alt text](image-6.png)
 
 ## Be alert that you exactly copy and paste the question and options other wise it will not work
