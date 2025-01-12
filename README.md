@@ -2,37 +2,41 @@
 
 ## Here is the step by step to get unlimited response from people
 
-**1. First copy the JavaScript code from code.js**
 
-**2. Go to your google form in the response tab click on View in sheets**
+
+**1. Go to your google form in the response tab click on View in sheets**
+##
 ![alt text](image.png)
 
 
-**3. In google sheets, click on extension**
+**2. In google sheets, click on extension**
+##
 ![alt text](image-1.png)
 
 
 
-
-
-**4. Click on Apps Script**
+**3. Click on Apps Script**
 ##
 ![alt text](image-2.png)
 
 
-**5. Copy and paste the code here**
+
+**4. Copy and paste the code the code from code.js**
+##
 ![alt text](image-3.png)
 
 
-**6. Change formUrl**
+
+**5. Change formUrl**
 ``` bash 
 const formUrl = "https://docs.google.com/forms/d/1TyTcCMeNZuBcYkMRTP4acZ76HO_G0y74Zx3-BitTUew/edit"
 ```
 ![alt text](image-5.png)
 
 
-**7. Change the question and option for for your google form**
-You have to manually enter all the question and options for this. I know this is hassle.
+**6. Change the question and option for for your google form**
+
+- You have to manually enter all the question and options for this. I know this is hassle.
 
 ``` bash 
 const responses = {
