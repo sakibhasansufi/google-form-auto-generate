@@ -3,21 +3,33 @@
 ## Here is the step by step to get unlimited response from people
 
 **1. First copy the JavaScript code from code.js**
+
 **2. Go to your google form in the response tab click on View in sheets**
 ![alt text](image.png)
+
+
 **3. In google sheets, click on extension**
 ![alt text](image-1.png)
+
+
 **4. Click on Apps Script**
 ![alt text](image-2.png)
+
+
 **5. Copy and paste the code here**
 ![alt text](image-3.png)
+
+
 **6. Change formUrl**
 ``` bash 
 const formUrl = "https://docs.google.com/forms/d/1TyTcCMeNZuBcYkMRTP4acZ76HO_G0y74Zx3-BitTUew/edit"
-![alt text](image-4.png)
 ```
 ![alt text](image-5.png)
+
+
 **7. Change the question and option for for your google form**
+You have to manually enter all the question and options for this. I know this is hassle.
+
 ``` bash 
 const responses = {
       "this is": {
@@ -39,7 +51,15 @@ const responses = {
     };
 
 ```
-**8. Save and finally run the code**
+
+**8. Change the response number according to your need**
+``` bash 
+for (let i = 0; i < 5; i++) { // Generate 5 responses }
+```
+![alt text](image-7.png)
+
+
+**9. Save and finally run the code**
 ![alt text](image-6.png)
 
 ## Be alert that you exactly copy and paste the question and options other wise it will not work
