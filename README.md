@@ -73,6 +73,8 @@ for (let i = 0; i < 5; i++) { // Generate 5 responses }
 ##
 ![alt text](image-6.png)
 
+- It may ask for google sign in just allow your google account. If you have multiple account in you machine, it will work only one account. If you try work with other account, you might get error.
+
 ## Be alert that you exactly copy and paste the question and options other wise it will not work
 
 **Finally if everything is okay, go to your google form and see the response and benefit the magic. Without the hassle of sending out to a large number of people to fill out the data.**
